@@ -1,0 +1,40 @@
+.s1 {
+    background-image: url(../../images/s1-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 606px;
+    margin-bottom: 84px;
+
+    .s1-flexbox {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            @include titles(79px, 700);
+
+            @media (max-width: 630px) {
+                @include titles(60px, 700)
+            }
+
+            @media (max-width: 480px) {
+                @include titles(40px, 700)
+            }
+
+            @media (max-width: 320px) {
+                @include titles(30px, 700)
+            }
+        }
+
+        h5 {
+            @include titles(19px, 400);
+
+            @media (max-width: 480px) {
+                @include titles(14px, 700)
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+header {
+    margin-top: 24px;
+    margin-bottom: 18px;
+
+    .container {
+        @include container(1261px);
+    }
+
+    .main-logo {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    .flexbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .fa-bars {
+            cursor: pointer;
+            display: none;
+            margin-right: 20px;
+
+            @media (max-width: 641px) {
+                display: inline-block;
+            }
+        }
+
+        nav {
+            max-width: 562px;
+            width: 100%;
+
+            @media (max-width: 1260px) {
+                margin-right: 20px;
+            }
+
+            @media (max-width: 641px) {
+                display: none;
+            }
+
+            ul {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                li {
+
+                    a {
+                        color: $headerColor;
+
+                        &:hover {
+                            color: $headerHoverColor;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

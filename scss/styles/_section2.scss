@@ -1,0 +1,105 @@
+.s2 {
+
+    .s2-flexbox {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 710px) {
+            flex-wrap: wrap;
+        }
+
+
+    }
+
+    .section-conteiner {
+        @include container(1242px);
+
+
+        .hot {
+            max-width: 235px;
+            margin-left: 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-right: 80px;
+
+            @media (max-width: 710px) {
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 50px;
+            }
+
+            h2 {
+                @include textDec(17px)
+            }
+
+            h1 {
+                color: #010101;
+                font-family: Helvetica;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 37px;
+            }
+
+            p {
+                @include textDec(20px)
+            }
+        }
+
+        .flex-conteiner {
+            max-width: 924px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            @media (max-width: 1172px) {
+                justify-content: space-around;
+            }
+
+            p {
+                width: 236px;
+            }
+
+            .content1 {
+                margin-bottom: 56px;
+
+
+                img {
+                    margin-bottom: 23px;
+
+
+                    @media (max-width: 281px) {
+                        width: 200px;
+                    }
+                }
+
+                h1 {
+                    color: #343232;
+                    font-family: Helvetica;
+                    font-size: 19px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-bottom: 9px;
+
+                    @media (max-width: 281px) {
+                        font-size: 16px;
+                    }
+
+                }
+
+                p {
+                    @include textDec(17px);
+                    width: 286px;
+
+                    @media (max-width: 281px) {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@mixin container($maxSize) {
+    max-width: $maxSize;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@mixin titles($size, $weight) {
+    color: #FFF;
+    font-family: Helvetica;
+    font-size: $size;
+    font-style: normal;
+    font-weight: $weight;
+    line-height: normal;
+}
+
+@mixin textDec($textSize) {
+    color: #636060;
+    font-family: Helvetica;
+    font-size: $textSize;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
